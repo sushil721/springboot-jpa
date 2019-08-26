@@ -6,7 +6,7 @@
 <body>
 <h2>Hello</h2>
 
-<form action="/userAdd" modelAttribute="user" method="post">
+<form action="${pageContext.request.contextPath}/userAdd" modelAttribute="user" method="post">
 ID:-<input type="text" name="id" value="${user.id}">
 Country:- <input type="text" name="country" value="${user.country}"><br>
 Name:- <input type="text" name="name" value="${user.name}"><br>
